@@ -16,7 +16,7 @@ header {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -62,18 +62,20 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 60px;
 }
 
 img {
-  max-width: 600px;
+  width: 500px;
   height: 600px;
   border-radius: 10px;
+  margin: auto;
 }
 main {
   background-color: white;
-  padding: 40px 0;
+
   margin: 0 auto;
 }
 
@@ -87,7 +89,6 @@ main h2 {
 
 main h3 {
   font-weight: 600;
-
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: 5px;
@@ -95,10 +96,78 @@ main h3 {
   opacity: 0.5;
 }
 
+.card h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #272044;
+}
+
+.card h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #272044;
+}
+.card p {
+  font-size: 13px;
+}
 main p {
   font-size: 15px;
   line-height: 2;
 }
+.card img {
+  margin: 0;
+  width: 180px;
+  height: 170px;
+}
+.card-body .shakespeare {
+  font-size: 19px;
+  margin-top: 35px;
+}
+.card {
+  margin-top: 30px;
+  border-radius: 10px;
+  background: white;
+}
+
+.card-body {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 0;
+}
+.btn {
+  border-radius: 10px;
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #272044;
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 30px;
+  width: auto;
+}
+
+main .secondary h3 {
+  margin: 20px;
+}
+main .secondary {
+  background-color: #f8f8f8;
+  padding: 30px 150px;
+}
+
+main .center {
+  text-align: center;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(32, 39, 68, 0.8),
@@ -107,7 +176,7 @@ footer {
     url('../images/louvre.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px 0;
+  padding: 10px;
   color: white;
 }
 footer ul {
@@ -131,6 +200,7 @@ footer h3 {
 footer a {
   color: white;
 }
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -144,7 +214,19 @@ footer a {
   text-align: justify;
   grid-gap: 30px;
 }
-
+@media (max-width: 1200px) {
+  main .secondary {
+    padding: 20px;
+  }
+  main img {
+    display: block;
+    margin: 0 auto;
+  }
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
 @media (max-width: 900px) {
   header {
     padding: 30px 0;
@@ -171,6 +253,9 @@ footer a {
     display: block;
     margin: 0 auto;
   }
+  main .secondary {
+    padding: 20px;
+  }
   main h2 {
     font-size: 25px;
   }
@@ -184,6 +269,7 @@ footer a {
     grid-template-columns: 1fr;
     padding: 20px;
   }
+
   footer h3 {
     font-size: 15px;
   }
